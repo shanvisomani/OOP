@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+class employee
+{
+    public:
+    int eid;
+    string name;
+    employee(int eid,string name)
+    {
+        this->eid=eid;
+        this->name=name;
+        cout<<"employee record created!"<<endl;
+    }
+    ~employee()
+    {
+        cout<<"employee record deleted!"<<endl;
+    }
+    void display()
+    {
+        cout<<"employee id:"<<eid<<endl;
+        cout<<"name:"<<name<<endl;
+    }
+};
+int main()
+{
+    employee e(635,"shanvi");
+    e.display();
+    return 0;
+}

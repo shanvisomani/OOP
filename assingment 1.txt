@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+class book
+{
+public:
+    string title="c++ for dummies";
+    string author="rinku badgujar";
+    int price=299;
+
+void display()
+{
+    cout<<"TITLE:"<<title<<endl;
+    cout<<"AUTHOR:"<<author<<endl;
+    cout<<"PRICE:"<<price;
+}
+};
+int main()
+{
+    book b;
+    
+    b.display();
+    return 0;
+}

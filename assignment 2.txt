@@ -1,0 +1,30 @@
+#include<iostream>
+using namespace std;
+class student 
+{
+    public:
+    string name;
+    int rn;
+    string department;
+
+    void display()
+    {
+    cout<<"NAME:"<<name<<endl;
+    cout<<"ROLL NO.:"<<rn<<endl;
+    cout<<"DEPARTMENT:"<<department<<endl;
+    }
+};
+int main()
+{
+    student s1;
+    s1.name="shanvi somani";
+    s1.rn=59;
+    s1.department="SOAI";
+    student s2;
+    s2.name="riya shah";
+    s2.rn=12;
+    s2.department="SOAI";
+    s1.display();
+    s2.display();
+    return 0;       
+}
