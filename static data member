@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+class student
+{
+public:
+int rno;
+int marks;
+static string clg_name;
+
+void display()
+{
+cout<<rno<<endl;
+cout<<marks<<endl;
+cout<<clg_name;
+}
+};
+string student::clg_name="MIT SOAI";
+
+int main()
+{
+student s1;
+s1.rno=1;
+s1.marks=99;
+s1.display();
+return 0;
+}
