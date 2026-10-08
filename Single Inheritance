@@ -1,0 +1,38 @@
+#include<iostream>
+using namespace std;
+class person
+{
+public:
+string name;
+int age;
+void display ()
+{
+cout<<"personal info:"<<endl;
+cout<<"person name:"<<name<<endl;
+cout<<"person age:"<<age<<endl;
+}
+};
+class student:public person
+{
+public:
+int rno;
+string depart;
+void show ()
+{
+cout<<"student info:"<<endl;
+cout<<"student roll no.:"<<rno<<endl;
+cout<<"student department:"<<depart<<endl;
+}
+};
+int main ()
+{
+student s1;
+s1.name="shanvi somani";
+s1.age=18;
+s1.rno=59;
+s1.depart="SoAi 2";
+s1.display();
+s1.show();
+return 0;
+}
+
